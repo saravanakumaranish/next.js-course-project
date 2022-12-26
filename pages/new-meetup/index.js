@@ -22,7 +22,8 @@ function NewMeetupPage() {
      router.push('/');
   }
 
-  return <Fragment>
+  return (
+  <Fragment>
     <Head>
     <title>Add a New Meetup</title>
     <meta 
@@ -32,6 +33,7 @@ function NewMeetupPage() {
   </Head>
     <NewMeetupForm onAddMeetup={addMeetupHandler} />
     </Fragment>
+  )
 }
 
 export default NewMeetupPage;
